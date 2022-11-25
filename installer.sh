@@ -1,4 +1,3 @@
-sudo su;
 apt upgrade -y;
 apt update -y;
 apt install curl ffmpeg wget zip unzip -y;
