@@ -12,7 +12,7 @@ npm install pm2 -g;
 echo "SetUp canvas..."
 sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev -y;
 echo "SetUp SSH..."
-cp -rf template /etc/ssh/sshd_config;
+nano /etc/ssh/sshd_config
 systemctl restart ssh;
 echo "Mengubah TimeZone..."
 sudo timedatectl set-timezone Asia/Jakarta;
