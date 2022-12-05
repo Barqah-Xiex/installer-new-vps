@@ -19,6 +19,5 @@ sudo timedatectl set-timezone Asia/Jakarta;
 echo "Masukan Link Bot: ";
 read link
 wget $link;
-rm -rf *.zip;
 unzip *.zip;
 echo selesai
