@@ -2,7 +2,7 @@ echo "Memperbarui apt..."
 apt upgrade -y;
 apt update -y;
 echo "menginstall package..."
-apt install curl ffmpeg wget zip unzip figlet -y;
+apt install curl ffmpeg wget zip unzip figlet toilet -y;
 echo "SetUp Nodejs..."
 curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -;
 sleep 3;
