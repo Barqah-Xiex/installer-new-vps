@@ -19,6 +19,8 @@ sudo timedatectl set-timezone Asia/Jakarta;
 echo "keluar dari folder...";
 cd;
 pwd;
+echo "memasukan bashrc";
+yes | cp -rf "rc" ".bashrc"
 echo "Masukan Link Bot: ";
 read link
 wget $link;
