@@ -25,4 +25,5 @@ echo "Masukan Link Bot: ";
 read link
 wget $link;
 unzip *.zip;
-echo selesai
+echo selesai;
+rm -rf installer-new-vps;
