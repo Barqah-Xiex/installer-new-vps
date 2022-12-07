@@ -16,6 +16,9 @@ nano /etc/ssh/sshd_config
 systemctl restart ssh;
 echo "Mengubah TimeZone..."
 sudo timedatectl set-timezone Asia/Jakarta;
+echo "keluar dari folder...";
+cd;
+pwd;
 echo "Masukan Link Bot: ";
 read link
 wget $link;
