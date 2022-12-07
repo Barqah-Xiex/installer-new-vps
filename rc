@@ -322,6 +322,7 @@ bash_prompt() {
 	############################################################################
 	## TEXT FORMATING                                                         ##
 	## Generate the text formating according to configuration                 ##
+	   toilet -f mono12 -F gay xiex.my.id; echo "Sistem Oprasi:"; echo " Linux"; echo ""; echo "Distro:"; echo " Ubuntu 20.04"; echo ""; echo "UpTime:"; uptime;
 	############################################################################
 	
 	## CONVERT CODES: add offset
