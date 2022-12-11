@@ -27,11 +27,13 @@ echo "keluar dari folder...";
 cd;
 pwd;
 echo "Masukan Link Bot: ";
-if [[ $2 != "n" ]]
+if [[ $2 = "n" ]]
 then
-read link
-wget $link;
-unzip *.zip;
+  echo "skipping download zip";
+else
+  read link
+  wget $link;
+  unzip *.zip;
 fi
 echo selesai;
 rm -rf installer-new-vps;
