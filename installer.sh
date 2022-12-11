@@ -12,7 +12,12 @@ npm install pm2 -g;
 echo "SetUp canvas..."
 sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev -y;
 echo "SetUp SSH..."
-nano /etc/ssh/sshd_config
+if [ $1 = "y" ]
+then
+  cp -rf template /etc/ssh/sshd_config
+else
+  nano /etc/ssh/sshd_config
+fi
 systemctl restart ssh;
 echo "Mengubah TimeZone..."
 sudo timedatectl set-timezone Asia/Jakarta;
@@ -22,8 +27,11 @@ echo "keluar dari folder...";
 cd;
 pwd;
 echo "Masukan Link Bot: ";
+if [[ $2 != "n" ]]
+then
 read link
 wget $link;
 unzip *.zip;
+fi
 echo selesai;
 rm -rf installer-new-vps;
