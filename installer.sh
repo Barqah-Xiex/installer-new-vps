@@ -22,12 +22,17 @@ systemctl restart ssh;
 echo "Mengubah TimeZone..."
 sudo timedatectl set-timezone Asia/Jakarta;
 echo "memasukan bashrc";
-cp -rf "rc" "../.bashrc"
-echo "keluar dari folder...";
+if [[ $2 = "n" ]]
+then
+  echo "tanpa bashrc";
+else
+  cp -rf "rc" "../.bashrc"
+  echo "keluar dari folder...";
+fi
 cd;
 pwd;
 echo "Masukan Link Bot: ";
-if [[ $2 = "n" ]]
+if [[ $3 = "n" ]]
 then
   echo "skipping download zip";
 else
