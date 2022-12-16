@@ -51,6 +51,16 @@ nala:
 ```
 alias apt="nala"; apt install git -y; git clone https://github.com/Barqah-Xiex/installer-new-vps; cd installer-new-vps; bash installer.sh y n n;
 ```
+# otomatis konfig ssh & install bot & enggak pake bashrc
+apt:
+```
+apt install git -y; git clone https://github.com/Barqah-Xiex/installer-new-vps; cd installer-new-vps; bash installer.sh y y n;
+```
+
+nala:
+```
+alias apt="nala"; apt install git -y; git clone https://github.com/Barqah-Xiex/installer-new-vps; cd installer-new-vps; bash installer.sh y y n;
+```
 
 # enggak otomatis konfig ssh & enggak install bot & enggak pake bashrc
 apt:
