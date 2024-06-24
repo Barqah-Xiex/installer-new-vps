@@ -4,7 +4,7 @@ apt update -y;
 echo "menginstall package..."
 apt install curl ffmpeg wget zip unzip figlet toilet -y;
 echo "SetUp Nodejs..."
-curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -;
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -;
 sleep 3;
 apt update;
 apt install nodejs -y;
