@@ -19,7 +19,7 @@ if [ $1 = "y" ]
 then
   cp -rf template /etc/ssh/sshd_config
 else
-  nano /etc/ssh/sshd_config
+  echo "tanpa setup ssh";
 fi
 systemctl restart ssh;
 echo "Mengubah TimeZone..."
