@@ -7,6 +7,7 @@ echo "SetUp Nodejs..."
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -;
 sleep 3;
 apt install nodejs -y;
+apt install npm -y;
 npm install pm2 -g;
 npm install n -g;
 n latest;
