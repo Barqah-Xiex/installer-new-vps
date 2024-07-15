@@ -9,6 +9,9 @@ sleep 3;
 apt update;
 apt install nodejs -y;
 npm install pm2 -g;
+npm install n -g;
+n latest;
+hash -r;
 echo "SetUp canvas..."
 sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev -y;
 echo "SetUp SSH..."
