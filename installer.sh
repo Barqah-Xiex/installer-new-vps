@@ -1,6 +1,6 @@
 echo "Memperbarui apt..."
-apt upgrade -y;
 apt update -y;
+apt upgrade -y;
 echo "menginstall package..."
 apt install curl ffmpeg wget zip unzip figlet toilet -y;
 echo "SetUp Nodejs..."
