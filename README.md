@@ -39,8 +39,3 @@ apt:
 ```
 apt install git -y; git clone https://github.com/Barqah-Xiex/installer-new-vps; cd installer-new-vps; bash installer.sh n n n;
 ```
-
-nala:
-```
-alias apt="nala"; apt install git -y; git clone https://github.com/Barqah-Xiex/installer-new-vps; cd installer-new-vps; bash installer.sh n n n;
-```
