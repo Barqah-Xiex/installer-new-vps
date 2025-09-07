@@ -17,7 +17,8 @@ sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev l
 echo "SetUp SSH..."
 if [ $1 = "y" ]
 then
-  cp -rf template /etc/ssh/sshd_config
+  cp -rf template /etc/ssh/sshd_config;
+  systemctl restart ssh;
 else
   echo "tanpa setup ssh";
 fi
